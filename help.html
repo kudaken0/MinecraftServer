@@ -1,0 +1,103 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/style.css?20221020">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>console.log('%c警告 %cよくわからないコードを入力したり貼り付けないでください','color:red; font-size:3em',' font-size:2em')</script>
+
+  <title>ヘルプ</title>
+  <header id="global-head">
+  <h1 id="brand-logo"></h1>
+</header>
+<div id="nav-toggle">
+  <div>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<aside id="sidebar">
+  <nav id="global-nav">
+    <ul>
+      <li><a href="./index.html">トップ</a></li>
+      <li><a href="./about.html">サーバーについて</a></li>
+      <li><a href="./help.html">ヘルプ</a></li>
+</aside>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+  (function ($) {
+    $(function () {
+      $('.sub-menu').on({
+        'mouseenter': function () {
+          $(this).addClass('is-active');
+        },
+        'mouseleave': function () {
+          $(this).removeClass('is-active');
+        }
+      });
+      $('#nav-toggle,#overlay').on('click', function () {
+        $('body').toggleClass('open');
+      });
+    });
+  })(jQuery);
+</script>
+</head>
+  <body>
+    <div id="header"></div>
+    <div class="site">
+    <br>
+      <h1>ヘルプ</h1>
+      <br>
+      <h2>よくある質問</h2>
+      <table border="1">
+        <tr>
+            <td>Q. サーバーの入り方がわかりません！！</td><td><a href="./hairikata/" style="color: blue;">こちら</a>のページをご参照ください。</td>
+        </tr>
+      </table>
+  <h2>コマンド</h2>
+  <table border="1">
+    <tr>
+        <td>コマンド</td><td>説明</td>
+    </tr>
+    <tr>
+        <td>/sit</td><td>その場で座ることができます。</td>
+    </tr>
+    <tr>
+        <td>/lay</td><td>その場で仰向けになります。</td>
+    </tr>
+    <tr>
+        <td>/crawl</td><td>その場でうつ伏せになります。</td>
+    </tr>
+    <tr>
+        <td>/spin</td><td>回れます(統合版では表示されないらしい)</td>
+    </tr>
+    <tr>
+      <td>/back</td><td>死んだ場所にテレポートします。</td>
+  </tr>
+  <tr>
+    <td>/sethome</td><td>特定の場所を登録できます(１つのみ)</td>
+</tr>
+  </table>
+  <h2>使える機能</h2>
+  <li>スニークして木や鉱石などを掘ると一括で破壊できます。</li>
+  <li>一人が寝ると夜がスキップされ寝た人はスピードの効果が数秒つきます。</li>
+  <li>Disocrdサーバーの特定のチャンネルで発言するとマインクラフトサーバー内のチャットに送信されます。逆にマインクラフトサーバーのチャットで発言するとDiscordのチャンネルに送信されます。</li>
+  <li>スニークして木や鉱石などを壊すと一括で破壊できます。</li>
+  <br>
+ 
+  <a href="./index.html" style="color: blue;"><h3>トップに戻る</h3></a>
+  <br> 
+</div>
+    </body>
+  </body>
+  
+  </html>
